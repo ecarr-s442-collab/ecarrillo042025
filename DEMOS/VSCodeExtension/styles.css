@@ -1,0 +1,21 @@
+/* This is a CCS comment */
+/* ? question comment */
+/* ! alert comment*/
+/* TODO todo comment */
+/* * regular comment (different green */
+
+body
+{
+    background-color: cornflowerblue;
+}
+
+h1
+{
+    color: aqua;
+    background-color: white;
+    padding: 1rem;
+}
+
+ul{
+    font-family: 'Courier New', Courier, monospace;
+}
