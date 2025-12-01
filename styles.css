@@ -85,7 +85,15 @@ p .container {
   text-align: center;
   min-height: auto;
 }
-
+#aifooter {
+  background-color: darkblue;
+  min-height: auto;
+  padding: 1rem;
+}
+#aifooter .container {
+  text-align: center;
+  min-height: auto;
+}
 #subfooter {
   background-color: brown;
   min-height: 10rem;
