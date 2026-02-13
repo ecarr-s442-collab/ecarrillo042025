@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Align Items Live Demo</title>
+    <style>
+      #flexparent {
+        width: 600px;
+        height: 600px;
+        background-color: purple;
+        flex-direction: column;
+        /* When flex direction is row */
+        /* Justify Content is horizontal */
+        /* Align Items is vertical */
+        border: 10px solid black;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+      }
+      .flexchild {
+        background-color: cornflowerblue;
+        height: 50px;
+        width: 50px;
+        padding: 1rem;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox Align Items Live Demo</h1>
+
+    <div id="flexparent">
+      <div class="flexchild">Child1</div>
+      <div class="flexchild">Child2</div>
+      <div class="flexchild">Child3</div>
+      <div class="flexchild">Child4</div>
+    </div>
+  </body>
+</html>
