@@ -1,9 +1,17 @@
+/* Mobile View - Default */
+:root {
+  --primary-color: red;
+  --secondary-color: blue;
+  --tertiary-color: green;
+  --main-font: arial;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: red;
+  background-color: var(--primary-color);
 }
 
 .container {
@@ -15,21 +23,22 @@ body {
 }
 
 #pageheader {
-  background-color: red;
+  background-color: var(--primary-color);
   min-height: auto;
   padding: 1rem;
 }
 #logo {
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 6.5rem;
+  height: 6.5rem;
   background-color: none;
   background-image: url("Images/Logo2.png");
-  border-radius: 100px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #pageheader .container {
   background-color: None;
-
   min-height: auto;
   text-align: center;
 }
@@ -53,6 +62,28 @@ body {
   text-decoration: none;
   font-size: 1.25rem;
   background-color: darkblue;
+}
+#mariopic {
+  background-color: transparent;
+  position: absolute;
+  bottom: 550px;
+  width: 100px;
+  height: 100px;
+  animation-name: slideright;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  background-image: url(Images/Mario.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@keyframes slideright {
+  from {
+    transform: translateX(-250px);
+  }
+  to {
+    transform: translateX(100vw);
+  }
 }
 #media {
   background-color: lightblue;
@@ -130,6 +161,8 @@ audio {
   background-color: red;
   border: 5px solid red;
 }
+
+/* Tablet View */
 @media screen and (min-width: 650px) {
   #pageheader nav ul {
     background-color: none;
@@ -140,17 +173,33 @@ audio {
     display: inline-block;
   }
   #pagecontent {
-    background-color: lightgreen;
+    background-color: var(--primary-color);
   }
   #career {
-    background-color: black;
+    background-color: var(--secondary-color);
+  }
+  #logo {
+    margin: 0;
   }
 }
+/* Desktop View */
 @media screen and (min-width: 1000px) {
   #pagecontent {
     background-color: orange;
   }
   #career {
+    background-color: wheat;
+  }
+  #semester1 {
+    background-color: orange;
+  }
+  #semester2 {
+    background-color: wheat;
+  }
+  #pagefooter {
+    background-color: orange;
+  }
+  #aifooter {
     background-color: wheat;
   }
 }
