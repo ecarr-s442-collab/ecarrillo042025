@@ -1,0 +1,161 @@
+!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+    <style>
+      /* Mobile First CSS */
+      html {
+        /* Temporary - Delete */
+        height: 200%;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: darkgoldenrod;
+        margin: 0%;
+      }
+
+      #pageheader {
+        background-color: darkblue;
+        padding: 1rem;
+        /* Default */
+        position: static;
+      }
+
+      #logo {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        display: block;
+      }
+
+      #fblogoheader {
+        background-color: steelblue;
+      }
+
+      #pageheader h1 {
+        text-align: center;
+        color: white;
+        /* Remove */
+        background-color: blue;
+      }
+
+      #pageheader nav {
+        background-color: steelblue;
+        padding: 0.5rem;
+        border-radius: 10px;
+      }
+
+      #pageheader ul {
+        padding: 0.5rem;
+        list-style-type: none;
+        background-color: magenta;
+        /* flexbox component */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      #pageheader li {
+        text-align: center;
+        border: 1px solid white;
+        padding: 0.5rem;
+        background-color: darkmagenta;
+      }
+      #pageheader a {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      /* None header elements */
+      main {
+        padding: 1rem;
+      }
+      p {
+        line-height: 1.5;
+        color: #333;
+      }
+      @media screen and (min-width: 650px) {
+        body {
+          background-color: aliceblue;
+        }
+        #pageheader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          /* Flexbox component */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        #fblogoheader {
+          /* flexbox component */
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+
+        #pageheader ul {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        #pageheader nav {
+          min-width: 400px;
+        }
+
+        #logo {
+          width: 80px;
+          height: 80px;
+        }
+        main {
+          padding-top: 200px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="pageheader">
+      <!-- Start the logo and h1 -->
+      <div id="fblogoheader">
+        <img
+          src="Images/paws_logo.png"
+          alt="Paws and Whiskers Logo"
+          id="logo"
+        />
+        <h1>Paws and Whiskers</h1>
+      </div>
+      <!-- End the logo and h1 -->
+
+      <!-- Start navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Pets</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- End navigation -->
+    </header>
+
+    <main>
+      <h2>FIxed Menu</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, at quae!
+        Quibusdam rerum assumenda nisi recusandae veniam totam non eaque est
+        esse. Laudantium dolorem maiores alias ullam. Veritatis fugiat in ab
+        deleniti sint? Nihil exercitationem aut, aperiam tempore illo
+        consectetur perspiciatis magni laudantium ducimus dolor distinctio ipsa?
+        Dolores, culpa numquam tempora, unde suscipit quia expedita doloribus
+        pariatur voluptatum, eius excepturi adipisci reiciendis quidem
+        repellendus tenetur? Quam voluptas provident quos unde soluta, doloribus
+        earum a sit itaque harum odio! Vero quaerat omnis nulla. Omnis
+        voluptatem, temporibus placeat tempora doloremque ipsam, reiciendis vero
+        tenetur quia laboriosam deserunt rem cupiditate, expedita nostrum
+        inventore!
+      </p>
+    </main>
+  </body>
+</html>
