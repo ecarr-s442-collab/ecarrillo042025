@@ -10,12 +10,12 @@ Im a high school student learning web development. This is my personal portfolio
 
 ### Skills
 
--HTML5
--CSS3
--Photoshop
--Git
--GitHub
--Responsive Design
+- HTML5
+- CSS3
+- Photoshop
+- Git
+- GitHub
+- Responsive Design
 
 ### Current Projects
 
