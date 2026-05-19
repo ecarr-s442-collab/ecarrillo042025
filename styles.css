@@ -128,6 +128,28 @@ p .container {
   padding: 1rem;
 }
 
+#worksamples {
+  background-color: navy;
+  min-height: 10rem;
+  padding: 1rem;
+}
+#worksamples ul {
+  list-style-type: none;
+}
+#certificates {
+  background-color: navy;
+  min-height: 10rem;
+  padding: 1rem;
+}
+#certificates ul {
+  list-style-type: none;
+}
+
+#certificates i {
+  color: cadetblue;
+  font-size: 0.9rem;
+  padding-right: 0.7rem;
+}
 #pagefooter {
   background-color: darkblue;
   min-height: auto;
