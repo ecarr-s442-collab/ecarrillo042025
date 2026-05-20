@@ -101,6 +101,14 @@ body {
   padding: 1rem;
   line-height: 1.7;
 }
+#pagecontent p {
+  background-color: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  min-height: 10rem;
+  padding: 1rem;
+  line-height: 1.7;
+}
 blockquote {
   font-style: italic;
   color: darkblue;
@@ -136,6 +144,11 @@ p .container {
 }
 #worksamples ul {
   list-style-type: none;
+}
+#worksamples i {
+  color: black;
+  font-size: 0.9rem;
+  padding-right: 0.7rem;
 }
 #certificates {
   background-color: navy;
