@@ -99,6 +99,7 @@ body {
   background-color: yellow;
   min-height: 10rem;
   padding: 1rem;
+  line-height: 1.7;
 }
 blockquote {
   font-style: italic;
